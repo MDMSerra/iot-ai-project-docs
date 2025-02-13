@@ -8,6 +8,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Configuración de entornos virtuales (opcional, si usas virtualenv)
+# Configuración de entornos virtuales
 venv/
 .env/
