@@ -1,0 +1,18 @@
+site_name: "IoT con AI - Documentación"
+theme:
+  name: "material"
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+
+
+nav:
+  - Inicio: index.md
+  - Fases del Proyecto:
+      - Diseño de Circuitos: fase1.md
+      - Desarrollo Web IoT: fase2.md
+      - Implementación de AI: fase3.md
+  - Recursos: recursos.md
+  - Sobre el Proyecto: about.md

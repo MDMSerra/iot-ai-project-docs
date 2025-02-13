@@ -1,0 +1,13 @@
+# Ignorar archivos de compilación de MkDocs
+site/
+*.log
+
+# Archivos de Python innecesarios
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuración de entornos virtuales (opcional, si usas virtualenv)
+venv/
+.env/
