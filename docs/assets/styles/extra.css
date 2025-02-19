@@ -1,71 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons&display=swap');
+
 :root {
-    --md-text-color: #222;
-    --md-code-bg-color: #f5f5f5;
+  --md-text-color: #222;
+  --md-code-bg-color: #f5f5f5;
+  --md-ambar-color: #fec106;
+  --md-ambar-color-light: #ffd54f;
+  --md-ambar-color-dark: #ffa000;
+  --font-size: 1rem;
+}
+
+.md-typeset {
+  font-size: var(--font-size);
 }
 
 [data-md-color-scheme="slate"] {
-    --md-text-color: #e0e0e0;
-    --md-code-bg-color: #2a2a2a;
+  --md-text-color: #e0e0e0;
+  --md-code-bg-color: #2a2a2a;
 }
 
 .md-typeset h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 #btn-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FFA000; /* Mostaza */
-    color: white;
-    padding: 12px;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--md-ambar-color);
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
 }
 
 #btn-top i {
-    font-size: 30px;
-    color: white;
+  font-size: 30px;
+  color: black;
 }
 
 #btn-top:hover {
-    background-color: #FF6D00;
+  background-color: var(--md-ambar-color-dark);
 }
 
 .reader-mode .md-header,
 .reader-mode .md-footer,
 .reader-mode .md-nav {
-    display: none;
+  display: none;
 }
 
 .reader-mode .md-content {
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2rem;
 }
 
 .md-content {
-    animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 a:hover {
-    transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+#reader-mode {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--md-ambar-color);
+  color: black;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+#reader-mode:hover {
+  background-color: var(--md-ambar-color-dark);
+}
+
+#reader-mode:active {
+  transform: scale(0.95);
 }

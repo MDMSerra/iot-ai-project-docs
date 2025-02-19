@@ -23,7 +23,9 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    # - navigation.tabs
+    - content.code.copy
+    - content.action.edit
+    - content.code.annotate
     - search.suggest
     - search.highlight
     - toc.follow
@@ -48,7 +50,7 @@ extra_css:
 
 markdown_extensions:
   - pymdownx.superfences:
-        custom_fences:
+      custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
@@ -61,11 +63,16 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.magiclink
+
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.arithmatex:
       generic: true
-  
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.min.js
+  - assets/scripts/init-mermaid.js
+  - assets/scripts/main.js
+
+repo_url: https://github.com/MDMSerra/iot-ai-project-docs
+edit_uri: edit/main/docs/

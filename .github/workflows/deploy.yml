@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: 🚀 Deploy MkDocs to GitHub Pages
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,10 +21,23 @@ jobs:
       - name: 📦 Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: 📥 Install dependencies
-        run: pip install mkdocs mkdocs-material
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-material-extensions
+          pip install pymdown-extensions
+
+      - name: 🧹 Clean old gh-pages branch (if needed)
+        run: git fetch origin gh-pages && git branch -D gh-pages || echo "No gh-pages branch found"
 
       - name: 🚀 Build and Deploy
         run: mkdocs gh-deploy --force
+
+      - name: 🔄 Invalidate GitHub Pages Cache
+        run: |
+          echo "Clearing GitHub Pages cache..."
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/repos/${{ github.repository }}/pages/builds
