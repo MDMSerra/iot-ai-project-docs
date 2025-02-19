@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="fase1/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
@@ -21,6 +23,9 @@
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -34,10 +39,14 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Poppins";--md-code-font:"Fira Code"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+      <link rel="stylesheet" href="assets/styles/extra.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -49,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="dark-amber">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -58,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#iot-con-ai-documentacion" class="md-skip">
           Skip to content
         </a>
       
@@ -100,6 +116,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="dark-amber"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="amber"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3.55 19.09 1.41 1.41 1.8-1.79-1.42-1.42M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6c0-3.32-2.69-6-6-6m8 7h3v-2h-3m-2.76 7.71 1.8 1.79 1.41-1.41-1.79-1.8M20.45 5l-1.41-1.4-1.8 1.79 1.42 1.42M13 1h-2v3h2M6.76 5.39 4.96 3.6 3.55 5l1.79 1.81zM1 13h3v-2H1m12 9h-2v3h2"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -146,6 +188,18 @@
 </div>
     
     
+      <div class="md-header__source">
+        <a href="https://github.com/MDMSerra/iot-ai-project-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
   
 </header>
@@ -179,6 +233,18 @@
     </a>
     IoT con AI - Documentación
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MDMSerra/iot-ai-project-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -237,18 +303,144 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      📌 Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#componentes-del-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      🛠️ Componentes del Proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Componentes del Proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sensores" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Sensores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dispositivos-de-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Dispositivos de Procesamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-actuadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Actuadores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-datos-iot-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔀 Flujo de Datos IoT + AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesamiento-con-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Procesamiento con Inteligencia Artificial
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Procesamiento con Inteligencia Artificial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-aplicacion-mantenimiento-predictivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 Ejemplo de aplicación: Mantenimiento Predictivo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plataformas-y-frameworks-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Plataformas y Frameworks Utilizados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracion-backend-y-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Integración Backend y Frontend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-web-de-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Interfaz Web de Control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue-y-mantenimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Despliegue y Mantenimiento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Despliegue y Mantenimiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fases-del-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Fases del Despliegue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#botones-interactivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Botones interactivos
     </span>
   </a>
   
@@ -305,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="fase1.md" class="md-nav__link">
+      <a href="fase1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -327,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="fase2.md" class="md-nav__link">
+      <a href="fase2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -349,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="fase3.md" class="md-nav__link">
+      <a href="fase3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -378,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="recursos.md" class="md-nav__link">
+      <a href="recursos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -399,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about.md" class="md-nav__link">
+      <a href="about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,18 +632,144 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      📌 Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#componentes-del-proyecto" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      🛠️ Componentes del Proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Componentes del Proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sensores" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Sensores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dispositivos-de-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Dispositivos de Procesamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-actuadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Actuadores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-datos-iot-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔀 Flujo de Datos IoT + AI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesamiento-con-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Procesamiento con Inteligencia Artificial
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Procesamiento con Inteligencia Artificial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-aplicacion-mantenimiento-predictivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 Ejemplo de aplicación: Mantenimiento Predictivo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plataformas-y-frameworks-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Plataformas y Frameworks Utilizados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracion-backend-y-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Integración Backend y Frontend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-web-de-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Interfaz Web de Control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue-y-mantenimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Despliegue y Mantenimiento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Despliegue y Mantenimiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fases-del-despliegue" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Fases del Despliegue
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#botones-interactivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Botones interactivos
     </span>
   </a>
   
@@ -472,22 +790,144 @@
                   
 
 
+  
+    <a href="https://github.com/MDMSerra/iot-ai-project-docs/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+
+<h1 id="iot-con-ai-documentacion">📡 IoT con AI - Documentación</h1>
+<p>Esta documentación cubre el desarrollo de un sistema IoT con integración de inteligencia artificial para la recolección, procesamiento y toma de decisiones basada en datos.</p>
+<h2 id="introduccion">📌 Introducción</h2>
+<p>El <strong>Internet de las Cosas (IoT)</strong> permite la conexión de dispositivos físicos a la red, recopilando y transmitiendo datos en tiempo real. Al combinarlo con <strong>inteligencia artificial (AI)</strong>, se pueden analizar grandes volúmenes de datos y tomar decisiones automatizadas.</p>
+<p>🔹 <strong>Objetivo:</strong> Diseñar y desarrollar un sistema IoT con procesamiento en backend e integración de un modelo de AI para análisis de datos.<br />
+🔹 <strong>Hardware:</strong> Se utilizarán microcontroladores como <strong>ESP32, Arduino y PSoC5</strong> para la adquisición de datos.<br />
+🔹 <strong>Software:</strong> Se implementará en <strong>Python, JavaScript y frameworks como TensorFlow Lite</strong> para la inferencia de AI.</p>
+<hr />
+<h2 id="componentes-del-proyecto">🛠️ <strong>Componentes del Proyecto</strong></h2>
+<p>El sistema se compone de:</p>
+<h3 id="1-sensores">1️⃣ <strong>Sensores</strong></h3>
+<p>Los sensores recopilan información del entorno. Algunos ejemplos son:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>🌡 <strong>DHT22</strong>: Temperatura y humedad.</li>
+<li>📷 <strong>Cámara OV2640</strong>: Captura de imágenes para procesamiento con AI.</li>
+<li>💡 <strong>LDR</strong>: Medición de intensidad lumínica.</li>
+<li>🏋 <strong>Celdas de carga</strong>: Para pesaje y monitoreo de presión.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h3 id="2-dispositivos-de-procesamiento">2️⃣ <strong>Dispositivos de Procesamiento</strong></h3>
+<p>Los datos se procesan en microcontroladores y servidores:</p>
+<ul>
+<li><strong>ESP32</strong> → Preprocesamiento básico y conexión WiFi/Bluetooth.</li>
+<li><strong>Servidor Backend (Raspberry Pi o Cloud)</strong> → Procesamiento avanzado con AI.</li>
+</ul>
+<h3 id="3-actuadores">3️⃣ <strong>Actuadores</strong></h3>
+<p>Los actuadores responden a comandos basados en el análisis de los datos.<br />
+Ejemplos:</p>
+<ul>
+<li>🔔 <strong>Alarmas</strong> activadas por detección de patrones anómalos.</li>
+<li>🚦 <strong>Luces y motores</strong> activados según datos procesados.</li>
+<li>🔧 <strong>Válvulas inteligentes</strong> en sistemas industriales.</li>
+</ul>
+<hr />
+<h2 id="flujo-de-datos-iot-ai">🔀 <strong>Flujo de Datos IoT + AI</strong></h2>
+<p>El flujo del sistema se puede representar así:</p>
+<div style="display: flex; justify-content: center;">
+<pre class="mermaid"><code>graph TD;
+  A[Sensor] --&gt;|Datos| B[ESP32];
+  B --&gt;|Preprocesamiento| C[Servidor];
+  C --&gt;|Inferencia AI| D[Decisión];
+  D --&gt;|Comando| E[Actuador];</code></pre>
+</div>
+
+<p>✅ <strong>Los datos de los sensores se procesan en el ESP32</strong> antes de ser enviados al backend.<br />
+✅ <strong>El servidor ejecuta modelos de AI para predecir o clasificar datos en tiempo real.</strong><br />
+✅ <strong>El resultado del análisis se traduce en acciones sobre actuadores.</strong></p>
+<hr />
+<h2 id="procesamiento-con-inteligencia-artificial">📊 <strong>Procesamiento con Inteligencia Artificial</strong></h2>
+<p>Los datos del sistema se analizan con <strong>Machine Learning y Deep Learning</strong>. Algunos modelos aplicables:</p>
+<ul>
+<li>📈 <strong>Regresión Lineal</strong> → Para predecir valores continuos, como temperatura futura.</li>
+<li>🏷️ <strong>Clasificación con Redes Neuronales</strong> → Para distinguir entre eventos normales y anómalos.</li>
+<li>🎭 <strong>Visión Computacional</strong> → Detección de objetos en imágenes con <strong>YOLO o MobileNet</strong>.</li>
+</ul>
+<h3 id="ejemplo-de-aplicacion-mantenimiento-predictivo">🔥 <strong>Ejemplo de aplicación: Mantenimiento Predictivo</strong></h3>
+<ol>
+<li>Se recopilan datos de vibraciones en motores.</li>
+<li>Se procesan con una red neuronal para detectar patrones inusuales.</li>
+<li>Se emite una alerta antes de que ocurra una falla.</li>
+</ol>
+<hr />
+<h2 id="plataformas-y-frameworks-utilizados">🚀 <strong>Plataformas y Frameworks Utilizados</strong></h2>
+<p>Para el desarrollo de este sistema, se utilizarán las siguientes herramientas:</p>
+<ul>
+<li>🔹 <strong>Microcontroladores</strong>: Arduino, ESP32, PSoC5.</li>
+<li>🔹 <strong>Backend</strong>: Python con Flask o FastAPI.</li>
+<li>🔹 <strong>Bases de datos</strong>: InfluxDB, Firebase o PostgreSQL.</li>
+<li>🔹 <strong>Frameworks de AI</strong>: TensorFlow Lite, OpenCV para visión.</li>
+<li>🔹 <strong>Comunicación</strong>: MQTT, HTTP y WebSockets.</li>
+</ul>
+<hr />
+<h2 id="integracion-backend-y-frontend">⚡ <strong>Integración Backend y Frontend</strong></h2>
+<p>El sistema IoT se comunica con un backend que maneja los datos en tiempo real y una interfaz web para visualización.</p>
+<ul>
+<li>📡 <strong>Backend</strong>: API con Flask/FastAPI para recibir y procesar datos.</li>
+<li>📊 <strong>Frontend</strong>: Dashboard en React o una interfaz ligera en MkDocs.</li>
+</ul>
+<p>Ejemplo de interacción:
+1️⃣ El ESP32 envía datos de temperatura al backend.<br />
+2️⃣ El backend los analiza con AI y decide si activar una alarma.<br />
+3️⃣ La información se muestra en un <strong>dashboard en tiempo real</strong>.</p>
+<hr />
+<h2 id="interfaz-web-de-control">🖥️ <strong>Interfaz Web de Control</strong></h2>
+<p>El sistema contará con una <strong>interfaz de usuario</strong> que mostrará los datos en tiempo real, gráficos y permitirá enviar comandos manuales a los dispositivos IoT.</p>
+<p>✅ 📊 <strong>Gráficos de sensores en vivo</strong>.<br />
+✅ 🏭 <strong>Monitoreo de dispositivos conectados</strong>.<br />
+✅ 🔔 <strong>Notificaciones y alertas en caso de anomalías</strong>.</p>
+<hr />
+<h2 id="despliegue-y-mantenimiento">🔧 <strong>Despliegue y Mantenimiento</strong></h2>
+<h3 id="fases-del-despliegue">🔹 <strong>Fases del Despliegue</strong></h3>
+<ol>
+<li>Desarrollo y prueba en local con <code>mkdocs serve</code>.</li>
+<li>Configuración de despliegue en GitHub Pages.</li>
+<li>Integración con servidor en la nube o Raspberry Pi.</li>
+<li>Monitoreo y ajustes de rendimiento.</li>
+</ol>
+<hr />
+<h2 id="botones-interactivos"><strong>Botones interactivos</strong></h2>
+<p>📌 <strong>Botón para volver arriba y activar el modo lector:</strong></p>
+<p><button id="btn-top" aria-label="Back to Top">
+  <i class="material-icons">arrow_upward</i>
+</button></p>
+<p><button id="reader-mode"  aria-label="Activate reading mode">📖 Modo Lector</button></p>
+<div id="font-controls">
+  <button onclick="setFontSize('normal')">A</button>
+  <button onclick="setFontSize('large')">A+</button>
+  <button onclick="setFontSize('xlarge')">A++</button>
+</div>
+
+<script>
+  document.getElementById('btn-top').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  document.getElementById('reader-mode').addEventListener('click', function() {
+    document.body.classList.toggle('reader-mode');
+  });
+
+   function setFontSize(size) {
+    let root = document.documentElement;
+    if (size === 'normal') root.style.setProperty('--font-size', '1rem');
+    if (size === 'large') root.style.setProperty('--font-size', '1.2rem');
+    if (size === 'xlarge') root.style.setProperty('--font-size', '1.5rem');
+  }
+
+</script>
+
+<script defer src="scripts/init-mermaid.js"></script>
+<script defer src="scripts/main.js"></script>
 
 
 
@@ -534,10 +974,16 @@ docs/
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "content.code.copy", "content.action.edit", "content.code.annotate", "search.suggest", "search.highlight", "toc.follow", "content.action.edit"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.3/mermaid.min.js"></script>
+      
+        <script src="assets/scripts/init-mermaid.js"></script>
+      
+        <script src="assets/scripts/main.js"></script>
       
     
   </body>
